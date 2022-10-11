@@ -487,10 +487,11 @@ h3 {
     display: flex;
     /* background: rebeccapurple; */
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    min-height: 100vh;
+    /* overflow: visible; */
+    overflow: auto;
     align-items: flex-start;
-    padding: 3.5rem 0.1re, ;
+    padding: 3.5rem 0.1rem ;
 }
 
 .left {
@@ -603,7 +604,7 @@ textarea:focus {
 
 }
 
-button {
+.button {
     background: #222;
     width: fit-content;
     font-size: 1.8rem;
@@ -615,12 +616,53 @@ button {
     border-radius: 10px;
 }
 
-button:hover {
+.button:hover {
     /* color: var(--primary-green); */
     background: var(--primary-green);
     transition: ease-in 0.3s;
 }
-
+/* ******* ANIMATIONS OF CONTACT US ******** */
+.lets_talk{
+    animation: top-to-bottom 1s;
+}
+@keyframes top-to-bottom{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.left {
+    animation: fade-in-move-down 1s;
+  }
+  
+  @keyframes fade-in-move-down {
+    0% {
+      opacity: 0;
+      transform: translateX(-3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .right {
+    animation:fade-in-left-to-right 1s;
+  }
+  
+  @keyframes fade-in-left-to-right {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 /* ======= projects section ===== */
 .project_middle {
     display: flex;
@@ -769,7 +811,7 @@ html.sr .load-hidden {
         padding: 0.9rem;
     }
 
-    button {
+    .button {
         font-size: 1.4rem;
         padding: 0.8rem 1.5rem;
 
@@ -922,7 +964,7 @@ html.sr .load-hidden {
     .left,
     .right {
         width: 100%;
-        /* height: 100; */
+        /* height: auto; */
     }
 
     .card {
@@ -1112,7 +1154,7 @@ text-align: center;
     .im{
         font-size: 1.7rem;
     }
-    h3{
-        font-size: 2.3rem;
+    .right h3{
+        font-size: 2.1rem;
     }
 }

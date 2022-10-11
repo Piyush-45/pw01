@@ -35,7 +35,7 @@
             </aside>
 
             <main class="about_middle">
-                <h2 class="projects_h2">Let's<span class="me"> Talk</span></h2>
+                <h2 class="projects_h2 lets_talk">Let's<span class="me"> Talk</span></h2>
                 <div class="contact_container">
                     <div class="left">
                         <div class="card card-1">
@@ -54,7 +54,7 @@
                     <div class="right">
                         <h3>How can I <span>Help You ?</span></h3>
                         <div class="details">
-                            <form action="https://formsubmit.co/your@email.com" method="POST">
+                            <form >
                                 <div class="name-half">
                                     <input type="text" name="username" required placeholder="Name" id="name" />
 
@@ -65,12 +65,12 @@
 
                                 </div>
                                 <div class="msg-half">
-                                    <textarea name="message" id="" placeholder="Message" id="message"></textarea>
+                                    <textarea name="message" placeholder="Message" id="message"></textarea>
                                 </div>
 
                             </form>
                         </div>
-                        <button type="submit" id="send-btn">Send Message</button>
+                        <div class="button">Send Message</div>
                     </div>
                 </div>
 
@@ -132,7 +132,7 @@
             $(this).css('background-position', mouseX + 'px ' + mouseY + 'px')
         })
     </script>
-     <script>
+     <!-- <script>
         ScrollReveal({
             reset: true,
             distance: '60px',
@@ -142,16 +142,16 @@
         ScrollReveal().reveal('.projects_h2', { delay: 300, origin: 'top' });
         ScrollReveal().reveal('.card-1', { delay: 300, origin: 'top' });
         ScrollReveal().reveal('.card-2', { delay: 300, origin: 'left' });
-        ScrollReveal().reveal('.card-3, #send-btn', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal('.card-3, .button', { delay: 300, origin: 'bottom' });
         ScrollReveal().reveal('h3', { delay: 300, origin: 'top' });
-        ScrollReveal().reveal('.name-half', { delay: 300, origin: 'bottom', interval: 200 });
-        ScrollReveal().reveal('.msg-half', { delay: 300, origin: 'right', });
+        ScrollReveal().reveal('.name-half ', { delay: 300, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.msg-half ', { delay: 300, origin: 'right', });
 
 
 
 
 
-    </script>
+    </script> -->
     <script src="index.js"></script>
 
 

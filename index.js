@@ -32,4 +32,3 @@
 // });
 // const btn = document.getElementById('send
 
-ScrollReveal().version;
