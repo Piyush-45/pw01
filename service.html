@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Serivces</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <div class="parent_container">
+        <div class="main_container">
+            <aside>
+                <div class="top_part">
+                    <div class="profile_photo"><img src="/profile.svg" alt=""></div>
+                    <div class="name">Piyush Tyagi</div>
+                    <p>Frontend Developer</p>
+                    <ul class="social_icons">
+                        <li><a href="https://github.com/Piyush-45"><img src="/githubf.png" alt=""></a></li>
+                        <li><a href=""><img src="/link.png" alt=""></a></li>
+                        <li><a href=""><img src="twitter_img.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <a href="" class="cv_btn">Download CV</a>
+                <div class="copyright">© 2023 All rights reserved.</div>
+            </aside>
+
+            <main class="service_middle about_middle">
+                <h2 class="services_h2">Services<span class="me"> Offered</span></h2>
+
+                <div class="service-flex hidden">
+                    <div class="service-box scard-1">
+                        <img src="/images/web_design_color_scheme.svg" class="service-icon" alt="">
+                        <h4>WEB DESIGN</h4>
+                        <p class="service-p">From nothing to working, get your idea designed and developed. And I Will
+                            help
+                            you in telling that story.</p>
+
+                    </div>
+
+                    <div class="service-box scard-2">
+                        <img src="/images/responsive_Card.svg" class="service-icon" alt="">
+                        <h4>Responsive / Mobile First </h4>
+                        <p class="service-p">Get a mobile-first website. Fully responsive for all screen sizes, from
+                            small
+                            screens, tablets, to desktops.
+                        </p>
+                    </div>
+
+                    <div class="service-box scard-3">
+                        <img src="/images/bug_fixing.svg" class="service-icon" alt="">
+                        <h4>Revamp Your Website </h4>
+                        <p class="service-p">Improve a present website, fix bugs, or add a new feature to your site
+                        </p>
+                    </div>
+                    <div class="service-box scard-4">
+                        <img src="/images/search-engine-optimization.png" class="service-icon" alt="">
+                        <h4>SEO Optmization</h4>
+                        <p class="service-p"> <span class="seo">“Content is what the search engines use to fulfill user
+                                intent."</span> Get Your websites SEO optimized and Go above and beyond
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="home-icon">
+                <a href="/index.html"><img src="/home f.png" alt=""></a>
+                    </div>
+                    <div class="about-icon">
+                       <a href="/about.html"> <img src="/about green.png" alt=""></a>
+                    </div>
+                    <div class="services">
+                        <a href="/service.html"><img src="/code f.png" alt=""></a>
+                    </div>
+                    <div class="portfolio-icon">
+                       <a href="/projects.html"> <img src="/briefcase green.png" alt=""></a>
+                    </div>
+                    <div class="contact_us">
+                       <a href="/contact.html"> <img src="/mail green.png" alt=""></a>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+
+
+        <div class="menu">
+            <div class="icon home">
+                <div class="tooltip">Home</div>
+                <a href="/index.html"> <span><img src="/home grey.png" alt=""></span></a>
+            </div>
+            <div class="icon about">
+                <div class="tooltip">About</div>
+                <a href="about.html"> <span><img src="/about.png" alt=""></span></a>
+            </div>
+            <div class="icon services">
+                <div class="tooltip">Services</div>
+                <a href="/service.html"><span><img src="/service grey.png" alt=""></span></a>
+            </div>
+            <div class="icon contact">
+                <div class="tooltip">Projects</div>
+                <a href="/projects.html"><span><img src="projec.png" alt=""></span></a>
+            </div>
+            <div class="icon contact">
+                <div class="tooltip">Contact</div>
+                <a href="/contact.html"><span><img src="mail grey.png" alt=""></span></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript"></script>
+    <script>
+        $('body').mousemove(function (a) {
+            var mouseX = (a.pageX * -1 / 15)
+            var mouseY = (a.pageY * - 1 / 15)
+            $(this).css('background-position', mouseX + 'px ' + mouseY + 'px')
+        })
+
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 1900,
+            // delay: 400
+        });
+
+        ScrollReveal().reveal('.services_h2', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('.scard-1', { delay: 10, origin: 'left'  });
+        ScrollReveal().reveal('.scard-2', { delay: 10, origin: 'right'  });
+   
+
+    </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

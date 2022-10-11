@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <div class="parent_container">
+        <div class="main_container">
+            <aside>
+                <div class="top_part">
+                    <div class="profile_photo"><img src="/profile.svg" alt=""></div>
+                    <div class="name">Piyush Tyagi</div>
+                    <p>Frontend Developer</p>
+                    <ul class="social_icons">
+                        <li><a href="https://github.com/Piyush-45"><img src="/githubf.png" alt=""></a></li>
+                        <li><a href=""><img src="/link.png" alt=""></a></li>
+                        <li><a href=""><img src="twitter_img.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <a href="" class="cv_btn">Download CV</a>
+                <div class="copyright">© 2023 All rights reserved.</div>
+            </aside>
+
+            <main class="project_middle about_middle">
+                <h2 class=" projects_h2">My <span class="me">Portfolio</span></h2>
+
+               <div class="mobile">
+                <div class="project_1 ">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper item-1">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="sunday-layers-1.png" alt="https://layers-check.netlify.app/"></div>
+                            <div class="swiper-slide"><img src="sunday-layers-2.png" alt="https://layers-check.netlify.app/"></div>
+                            <div class="swiper-slide"><img src="sunday-layers-3.png" alt=""></div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="description item-2">
+                        <div class="desc">
+                            <div class="description_heading">Description</div>
+                            <p class="description_p" > A frontend for an eCommerce website built with Html5, CSS3, Vanila JS.
+                                It is one of my personal projects,the goal was to build a site with no frameworks and
+                                libraries</p>
+
+                                <a href="https://layers-check.netlify.app/">Live Site</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="project_1">
+                    <div class="swiper item-1">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="/swiper_images/loop1.webp" alt="https://musicstudios.netlify.app/"></div>
+                            <div class="swiper-slide"><img src="/swiper_images/loop2.webp" alt="https://musicstudios.netlify.app/"></div>
+                            <div class="swiper-slide"><img src="/swiper_images/loop3.webp" alt="https://musicstudios.netlify.app/"></div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="description item-2">
+                        <div class="desc" >
+                            <div class="description_heading">Description</div>
+                            <p class="description_p" > A static frontend for an AR & VR website built with Html5, CSS3, Tailwind Css. It is one of my personal projects,the goal was to build a site with Tailwind css.</p>
+                            <a href="https://musicstudios.netlify.app/">Live Site</a>
+                        </div>
+                    </div>
+
+                </div>
+               </div>
+               <div class="mobile-menu">
+                <div class="home-icon">
+            <a href="/index.html"><img src="/home f.png" alt=""></a>
+                </div>
+                <div class="about-icon">
+                   <a href="/about.html"> <img src="/about green.png" alt=""></a>
+                </div>
+                <div class="services">
+                    <a href="/service.html"><img src="/code f.png" alt=""></a>
+                </div>
+                <div class="portfolio-icon">
+                   <a href="/projects.html"> <img src="/briefcase green.png" alt=""></a>
+                </div>
+                <div class="contact_us">
+                   <a href="/contact.html"> <img src="/mail green.png" alt=""></a>
+                </div>
+            </div>
+            </main>
+        </div>
+
+
+
+        <div class="menu">
+            <div class="icon home">
+                <div class="tooltip">Home</div>
+                <a href="/index.html"> <span><img src="/home grey.png" alt=""></span></a>
+            </div>
+            <div class="icon about">
+                <div class="tooltip">About</div>
+                <a href="about.html"> <span><img src="/about.png" alt=""></span></a>
+            </div>
+            <div class="icon services">
+                <div class="tooltip">Services</div>
+                <a href="/service.html"><span><img src="/service grey.png" alt=""></span></a>
+            </div>
+            <div class="icon contact">
+                <div class="tooltip">Projects</div>
+                <a href="/projects.html"><span><img src="projec.png" alt=""></span></a>
+            </div>
+
+            <div class="icon contact">
+                <div class="tooltip">Contact</div>
+                <a href="/contact.html"><span><img src="mail grey.png" alt=""></span></a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2100,
+                disableOnInteraction: false
+            },
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            // pagination: {
+            //     el: '.swiper-pagination',
+            // },
+
+
+
+        });
+    </script>
+    <script>
+        $('body').mousemove(function (a) {
+            var mouseX = (a.pageX * -1 / 15)
+            var mouseY = (a.pageY * - 1 / 15)
+            $(this).css('background-position', mouseX + 'px ' + mouseY + 'px')
+        })
+
+        
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 1900,
+            // delay: 400
+        });
+        ScrollReveal().reveal('.projects_h2', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('.item-1', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.item-2', { delay: 300, origin: 'right' });
+
+
+
+
+
+    </script>
+    <!-- <script src="index.js"></script> -->
+</body>
+
+</html>

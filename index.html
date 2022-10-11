@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Tyagi</title>
+    <script src="https://unpkg.com/scrollreveal" defer> </script>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="index.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+<body>
+
+
+    <div class="parent_container">
+
+        <div class="main_container">
+            <aside>
+                <div class="top_part">
+                    <div class="profile_photo"><img src="/profile.svg" alt=""></div>
+                    <div class="name">Piyush Tyagi</div>
+                    <p>Frontend Developer</p>
+                    <ul class="social_icons">
+                        <li><a href="https://github.com/Piyush-45"><img src="/githubf.png" alt=""></a></li>
+                        <li><a href=""><img src="/link.png" alt=""></a></li>
+                        <li><a href=""><img src="twitter_img.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="button_Area">
+                    <a href="" class="cv_btn">Download CV</a>
+                    <div class="copyright">© 2023 All rights reserved.</div>
+                </div>
+            </aside>
+
+            <main>
+                <!-- <p>Hi my name is</p> -->
+                <div class="main_middle">
+                    <h1>Piyush Tyagi</h1>
+                    <div class="im">I'M <span class="auto-type"></span></div>
+                </div>
+                <div class="mobile-menu">
+                    <div class="home-icon">
+                <a href="/index.html"><img src="/home f.png" alt=""></a>
+                    </div>
+                    <div class="about-icon">
+                       <a href="/about.html"> <img src="/about green.png" alt=""></a>
+                    </div>
+                    <div class="services">
+                        <a href="/service.html"><img src="/code f.png" alt=""></a>
+                    </div>
+                    <div class="portfolio-icon">
+                       <a href="/projects.html"> <img src="/briefcase green.png" alt=""></a>
+                    </div>
+                    <div class="contact_us">
+                       <a href="/contact.html"> <img src="/mail green.png" alt=""></a>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+
+
+        <div class="menu">
+            <div class="icon home">
+                <div class="tooltip">Home</div>
+                <a href=""> <span><img src="/home grey.png" alt=""></span></a>
+            </div>
+            <div class="icon about">
+                <div class="tooltip">About</div>
+                <a href="about.html"> <span><img src="/about.png" alt=""></span></a>
+            </div>
+            <div class="icon services">
+                <div class="tooltip">Services</div>
+                <a href="/service.html"><span><img src="/service grey.png" alt=""></span></a>
+            </div>
+            <div class="icon contact">
+                <div class="tooltip">Projects</div>
+                <a href="/projects.html"><span><img src="projec.png" alt=""></span></a>
+            </div>
+
+            <div class="icon contact">
+                <div class="tooltip">Contact</div>
+                <a href="/contact.html"><span><img src="mail grey.png" alt=""></span></a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- ===typed js ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Frontend Developer", "Web Designer", "Freelancer"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            loop: true
+        })
+
+    </script>
+    <!-- ===typed js end ===== -->
+
+    <script type="text/javascript"></script>
+    <script>
+        $('body').mousemove(function (a) {
+            var mouseX = (a.pageX * -1 / 15)
+            var mouseY = (a.pageY * - 1 / 15)
+            $(this).css('background-position', mouseX + 'px ' + mouseY + 'px')
+        })
+    </script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

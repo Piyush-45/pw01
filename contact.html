@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact uS</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <div class="parent_container">
+        <div class="main_container">
+            <aside>
+                <div class="top_part">
+                    <div class="profile_photo"><img src="/profile.svg" alt=""></div>
+                    <div class="name">Piyush Tyagi</div>
+                    <p>Frontend Developer</p>
+                    <ul class="social_icons">
+                        <li><a href="https://github.com/Piyush-45"><img src="/githubf.png" alt=""></a></li>
+                        <li><a href=""><img src="/link.png" alt=""></a></li>
+                        <li><a href=""><img src="twitter_img.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <a href="" class="cv_btn">Download CV</a>
+                <div class="copyright">© 2023 All rights reserved.</div>
+            </aside>
+
+            <main class="about_middle">
+                <h2 class="projects_h2">Let's<span class="me"> Talk</span></h2>
+                <div class="contact_container">
+                    <div class="left">
+                        <div class="card card-1">
+                            <img src="location.png" alt="">
+                            <p>Delhi NCR, India</p>
+                        </div>
+                        <div class="card card-2">
+                            <img src="mail green.png" alt="">
+                            <p>tyagipiyush@gmail.com</p>
+                        </div>
+                        <div class="card card-3">
+                            <img src="/tick.png" alt="">
+                            <p>Freelance Available</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3>How can I <span>Help You ?</span></h3>
+                        <div class="details">
+                            <form action="https://formsubmit.co/your@email.com" method="POST">
+                                <div class="name-half">
+                                    <input type="text" name="username" required placeholder="Name" id="name" />
+
+                                    <input type="email" name="email" required placeholder="Email" autocomplete="false"
+                                        id="email" />
+
+                                    <input type="text" name="subject" placeholder="Subject" id="subject" />
+
+                                </div>
+                                <div class="msg-half">
+                                    <textarea name="message" id="" placeholder="Message" id="message"></textarea>
+                                </div>
+
+                            </form>
+                        </div>
+                        <button type="submit" id="send-btn">Send Message</button>
+                    </div>
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="home-icon">
+                <a href="/index.html"><img src="/home f.png" alt=""></a>
+                    </div>
+                    <div class="about-icon">
+                       <a href="/about.html"> <img src="/about green.png" alt=""></a>
+                    </div>
+                    <div class="services">
+                        <a href="/service.html"><img src="/code f.png" alt=""></a>
+                    </div>
+                    <div class="portfolio-icon">
+                       <a href="/projects.html"> <img src="/briefcase green.png" alt=""></a>
+                    </div>
+                    <div class="contact_us">
+                       <a href="/contact.html"> <img src="/mail green.png" alt=""></a>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+
+        <div class="menu">
+            <div class="icon home">
+                <div class="tooltip">Home</div>
+                <a href="/index.html"> <span><img src="/home grey.png" alt=""></span></a>
+            </div>
+            <div class="icon about">
+                <div class="tooltip">About</div>
+                <a href="/about.html"> <span><img src="/about.png" alt=""></span></a>
+            </div>
+            <div class="icon services">
+                <div class="tooltip">Services</div>
+                <a href="/service.html"><span><img src="/service grey.png" alt=""></span></a>
+            </div>
+            <div class="icon contact">
+                <div class="tooltip">Projects</div>
+                <a href="/projects.html"><span><img src="projec.png" alt=""></span></a>
+            </div>
+            <div class="icon contact">
+                <div class="tooltip">Contact</div>
+                <a href="/contact.html"><span><img src="mail grey.png" alt=""></span></a>
+            </div>
+        </div>
+
+    </div>
+
+
+   
+
+    <!-- ===== background move -->
+    <script type="text/javascript"></script>
+    <script>
+        $('body').mousemove(function (a) {
+            var mouseX = (a.pageX * -1 / 15)
+            var mouseY = (a.pageY * - 1 / 15)
+            $(this).css('background-position', mouseX + 'px ' + mouseY + 'px')
+        })
+    </script>
+     <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 1900,
+            // delay: 400
+        });
+        ScrollReveal().reveal('.projects_h2', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('.card-1', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('.card-2', { delay: 300, origin: 'left' });
+        ScrollReveal().reveal('.card-3, #send-btn', { delay: 300, origin: 'bottom' });
+        ScrollReveal().reveal('h3', { delay: 300, origin: 'top' });
+        ScrollReveal().reveal('.name-half', { delay: 300, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.msg-half', { delay: 300, origin: 'right', });
+
+
+
+
+
+    </script>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
