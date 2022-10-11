@@ -1010,11 +1010,25 @@ html.sr .load-hidden {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    /* margin-top: 0.8rem;
-    margin-bottom: 0.5rem; */
-    padding: 1rem 0.5rem;
-
-
+    margin-top:3.8rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+    /* padding: 1rem 0.5rem; */
+text-align: center;
+}
+.mobile-menu a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.text{
+    background-color: #0b9876;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    writing-mode: vertical-lr;
 }
 
 .mobile-menu img {
@@ -1042,7 +1056,7 @@ html.sr .load-hidden {
 
     .main_container {
         width: 100vw;
-
+        /* height: 100vh; */
     }
 
     .main_middle {
@@ -1097,5 +1111,8 @@ html.sr .load-hidden {
     }
     .im{
         font-size: 1.7rem;
+    }
+    h3{
+        font-size: 2.2rem;
     }
 }
