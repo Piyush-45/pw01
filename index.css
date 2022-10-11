@@ -1056,13 +1056,13 @@ text-align: center;
 
     .main_container {
         width: 100vw;
-        /* height: 100vh; */
+        
     }
 
-    .main_middle {
+    /* .main_middle {
         width: 100vw;
         height: 100vh;
-    }
+    } */
 
     .about_middle {
         width: 100vw;
@@ -1113,6 +1113,6 @@ text-align: center;
         font-size: 1.7rem;
     }
     h3{
-        font-size: 2.2rem;
+        font-size: 2.3rem;
     }
 }
