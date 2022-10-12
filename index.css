@@ -341,7 +341,7 @@ justify-content: space-between;
 .about_p_1,
 .about_p_2,
 .about_p_3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
@@ -383,10 +383,12 @@ justify-content: space-between;
 
 .about_p_3 {
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 1.2rem;
+    margin-top: 1.3rem;
 }
 
-
+.cv-btn{
+    display: none;
+}
 /* ====== service section ====== */
 .service-flex {
     display: flex;
@@ -1051,7 +1053,7 @@ html.sr .load-hidden {
     .about_p_1,
     .about_p_2,
     .about_p_3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -1103,7 +1105,32 @@ html.sr .load-hidden {
     aside {
         display: none;
     }
+    .cv-btn{
+        display: inline-block;
+        display: flex;
+        gap: 01rem;
+        font-size: 1.5rem;
+        border: 2px solid #333;
+        width: fit-content;
+        margin-top: 1rem;
+        padding: 1rem 1.2rem;
+        align-self: center;
+        border-radius: 10px;
+        background: #0e876a  ;
+        font-weight: 700;
+        outline: none;
+        box-shadow: 10px 12px 11px -6px rgb(11 152 118 / 44%);
+      
+       
 
+    }
+    .cv-btn img{
+        width: 2rem;
+    }
+    .cv-btn a{
+        color: white;
+    }
+   
     .parent_container {
         margin: 0;
         padding: 0;
