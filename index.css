@@ -501,9 +501,7 @@ h3 {
     display: flex;
     /* background: rebeccapurple; */
     width: 100%;
-    min-height: 100vh;
-    /* overflow: visible; */
-    overflow: auto;
+    max-height: 100vh;
     align-items: flex-start;
     padding: 3.5rem 0.1rem ;
 }
@@ -547,11 +545,20 @@ h3 {
     font-size: 1.2rem;
 }
 
-.details {
+/* .details {
     display: flex;
     flex-direction: column;
+} */
+form{
+    display: flex;
+    flex-direction: column;
+   
 }
-
+.top-item{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
 
 .right {
     display: flex;
@@ -575,7 +582,7 @@ form {
     height: 100%;
     margin: 2rem 0;
     /* background: rebeccapurple; */
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 1rem;
 
@@ -597,6 +604,7 @@ textarea {
     border: 2px solid #6c6c6c;
     background: #222222;
     border-radius: 8px;
+    color: white;
 
 }
 
@@ -609,7 +617,7 @@ input:focus,
 textarea:focus {
     outline: none;
     border: 2px solid var(--primary-green);
-    color: white;
+    color: var(--primary-green);
 }
 
 .msg-half {
@@ -677,6 +685,10 @@ textarea:focus {
       transform: translateX(0);
     }
   }
+
+  .mobile-social-card{
+    display: none;
+}
 /* ======= projects section ===== */
 .project_middle {
     display: flex;
@@ -1105,6 +1117,7 @@ html.sr .load-hidden {
     aside {
         display: none;
     }
+
     .cv-btn{
         display: inline-block;
         display: flex;
@@ -1129,6 +1142,12 @@ html.sr .load-hidden {
     }
     .cv-btn a{
         color: white;
+    }
+    .card-4{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
     }
    
     .parent_container {
@@ -1181,7 +1200,9 @@ html.sr .load-hidden {
         visibility: visible;
 
     }
-
+.top-item{
+    gap: 1rem;
+}
 }
 
 
