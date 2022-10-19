@@ -660,7 +660,7 @@ textarea:focus {
     animation: fade-in-move-down 1s;
   }
   
-  @keyframes fade-in-move-down {
+ @keyframes fade-in-move-down {
     0% {
       opacity: 0;
       transform: translateX(-3rem);
@@ -775,6 +775,21 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
+/* ! animation of project section */
+.swiper{
+    /* animation: fade-in-right-to-left 3s ease-in; */
+}
+
+@keyframes fade-in-right-to-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-2rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(rem);
+    }
+  }
 /* ===== responsive design===== */
 @media screen and (max-width:1222px) {
     .name {
